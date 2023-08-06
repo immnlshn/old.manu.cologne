@@ -14,7 +14,7 @@ export default function Contact(){
             ">
                 <div className="flex flex-col items-center space-y-5 p-5 w-3/4 lg:w-1/2">
                     <h2 className="text-4xl font-bold tracking-wider text-center">Contact me</h2>
-                    <p>Don't hesitate to reach out - Let's connect to turn your vision into reality! Contact me today, and let's take the first step towards a fun and effective partnership!</p>
+                    <p>Don&apos;t hesitate to reach out - Let&apos;s connect to turn your vision into reality! Contact me today, and let&apos;s take the first step towards a fun and effective partnership!</p>
                     <div className="flex flex-col lg:flex-row items-center justify-start lg:justify-between gap-5 p-5">
                         <div className="flex lg:flex-col text-4xl items-center gap-5">
                             <a href="https://instagram.com/immnl.shn" target="_blank"><FontAwesomeIcon className="text-black dark:text-white hover:text-red-500 dark:hover:text-red-400" icon={faInstagram}/></a>
