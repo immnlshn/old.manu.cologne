@@ -1,12 +1,12 @@
 import { faCss3Alt, faDocker, faHtml5, faJava, faJs, faLine, faLinux, faPython, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Image from 'next/image'
 
-
-export default function Skills() {
+export default function Skills({ className }: { className?: string }) {
     return (
-        <div className="relative overflow-hidden">
-            <div className="h-screen mx-auto relative flex items-center justify-center
+        <div className={`${className} relative overflow-hidden py-5`}>
+            <div className="min-h-screen mx-auto relative flex items-center justify-center
             before:absolute before:h-[400px] before:w-[400px] before:content-[''] before:left-[-150px] before:-translate-y-[15vh] lg:before:-translate-y-[25vh]
             before:-z-20 before:overflow-hidden dark:before:opacity-50 before:rounded-8xl before:bg-gradient-radial before:from-blue-300
             before:to-transparent before:blur-2xl dark:before:from-blue-800  
@@ -15,9 +15,12 @@ export default function Skills() {
             dark:after:from-cyan-800 dark:after:to-transparent
             ">
                 <div className="flex flex-col items-center space-y-5 p-5">
+                    <div className="relative h-[24rem] w-[24rem]">
+                        <Image priority src="/techstack.svg" fill={true} className='object-contain' alt="developer svg"/>
+                    </div>
                     <h2 className="text-4xl font-bold tracking-wider text-center">Skills & Experiences</h2>
                     <p className="px-5">Over the past few years, I dived in technologies and frameworks of various kinds. These are the technologies I love and use the most:</p>
-                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 text-3xl">
+                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-12 text-3xl">
                         <div className="group flex relative justify-center">
                             <FontAwesomeIcon className="text-red-500" icon={faJava} size="2xl"/>
                             <span className="group-hover:opacity-100 transition-opacity bg-gray-300 dark:bg-neutral-800 px-1 text-sm rounded-md absolute  opacity-0 m-4 mx-auto translate-y-14">Java</span>
